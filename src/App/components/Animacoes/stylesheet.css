@@ -1,0 +1,147 @@
+.animacao {
+  position: relative;
+  color: #262626;
+  font-family: 'Righteous';
+  top: 0;
+  left: 0;
+  place-items: center;
+  overflow: hidden;
+}
+
+/*
+===============================
+TEXTO E BOTÕES 
+===============================
+*/
+
+.detalhe {
+  position: absolute;
+  background-color: purple;
+  width: 0.5vw;
+  height: 4.5vh;
+  top: 5.5vh;
+  left: 7.5vw;
+  animation: anima3 1.5s ease-in-out both;
+}
+
+.texto {
+  color: #7b7d7d;
+  font-size: 0.9em;
+  position: absolute;
+  top: 13vh;
+  left: 9.15vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 23vw;
+  animation: anima3 1.5s ease-in-out both;
+  animation-delay: 250ms;
+}
+
+.titulo {
+  position: absolute;
+  left: 12vw;
+  font-family: 'Akzidenz', sans-serif;
+  animation: anima3 1.5s ease-in-out both;
+  color: #632163;
+}
+
+.botao01 {
+  line-height: 2.8vh;
+  position: absolute;
+  left: 12.5vw;
+  animation: anima3 1.5s ease-in-out both;
+  animation-delay: 400ms;
+}
+
+/*
+===============================
+ELEMENTOS
+===============================
+*/
+.fundo {
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.montanha {
+  position: absolute;
+  top: 20.2vh;
+  left: 18.4vw;
+  animation: anima2 1s ease-in-out both;
+}
+
+.boneco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: anima 1.5s ease-in-out both;
+}
+
+.gps {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: anima 1.5s ease-in-out both;
+}
+
+/*
+===============================
+DIV PARA ESCONDER A MONTANHA VINDO DE BAIXO
+===============================
+*/
+
+.esconder {
+  position: relative;
+  background-color: white;
+  top: 0vh;
+  height: 10vh;
+}
+
+/*
+===============================
+ANIMAÇÕES
+===============================
+*/
+
+@keyframes anima {
+  0% {
+    transform: translateY(-3vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+@keyframes anima2 {
+  0% {
+    transform: translateY(6vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+@keyframes anima3 {
+  0% {
+    transform: translateX(-6vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0vh);
+    opacity: 1;
+  }
+}
+
+@keyframes is-rippling {
+  to {
+    opacity: 0;
+    transform: scale(1.15, 1.5);
+  }
+}
